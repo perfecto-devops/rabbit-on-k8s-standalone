@@ -37,6 +37,6 @@ RUN set -x \
 
 # We need to enable autocluster plugin
 COPY enabled_plugins /etc/rabbitmq/enabled_plugins
-RUN rabbitmq-plugins enable rabbitmq_management
+
 COPY rabbitmq-env.conf /etc/rabbitmq/rabbitmq-env.conf
 COPY start.sh /start.sh
